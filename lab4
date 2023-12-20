@@ -1,0 +1,13 @@
+massiv = [1, 2, 3, 4, 5]
+
+artirilmis_massiv = [x * 2 for x in massiv]
+
+with open("yeni_fayl.txt", "w") as f:
+    for element in artirilmis_massiv:
+        f.write(str(element) + "\n")
+
+cem = sum(artirilmis_massiv)
+
+print("Ədədi massiv:", massiv)
+print("Artırılmış massiv:", artirilmis_massiv)
+print("Əlavə olaraq cəm:", cem)
